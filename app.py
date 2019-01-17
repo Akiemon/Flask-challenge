@@ -8,7 +8,7 @@ app = Flask(__name__)
 def index():
     hatebu_array = []
 
-    r = requests.get("http://b.hatena.ne.jp/")
+    r = requests.get("http://b.hatena.ne.jp/hotentry/it")
     content = r.content
     soup = BeautifulSoup(content, "html.parser")
 
